@@ -1,0 +1,126 @@
+.header {
+    width: 100%;
+
+    &__top-baner {
+        width: 100%;
+        height: 50px;
+        background-color: #2aa2d4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icons {
+        display: flex;
+        flex-basis: 40%;
+
+        a {
+            margin: 0 5px;
+            text-decoration: none;
+
+            &:before {
+                @include flexCenter(row);
+                width: 32px;
+                height: 32px;
+                margin: 0;
+                font-size: 1.6rem;
+                color: #2a2a2a;
+                background-color: #ffffff;
+                border-radius: 50%;
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover {
+                &:before {
+                    color: #ffffff;
+                    background-color: #2a2a2a;
+                }
+            }
+
+            &:nth-child(2) {
+                &:before {
+                    color: #2aa2d4;
+                    font-size: 1.3rem;
+                }
+
+                &:hover {
+                    &:before {
+                        color: #ffffff;
+                        background-color: #2aa2d4;
+                    }
+                }
+            }
+        }
+    }
+
+    &__login {
+        flex-basis: 35%;
+        // height: 100%;
+
+        &--list {
+            list-style-type: none;
+            float: right;
+            overflow: hidden;
+            font-size: 0;
+        }
+
+        &--item {
+            display: inline-block;
+
+            a {
+                position: relative;
+                color: #ffffff;
+                font-size: 1.3rem;
+                text-decoration: none;
+                display: block;
+                padding: 0 6px;
+                line-height: 14px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 1px;
+                    background-color: #ffffff;
+                }
+            }
+
+            &:first-child {
+
+                a {
+                    &:before {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        height: 50px;
+        background-color: #2a2a2a;
+
+        &--list {
+            // width: 100%;
+            // text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            list-style-type: none;
+        }
+
+        &--item {
+            display: inline-block;
+
+            a {
+                color: #999999;
+                text-decoration: none;
+                display: block;
+            }
+        }
+    }
+}
