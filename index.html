@@ -18,34 +18,38 @@
     <!-- header -->
     <header class="header">
         <div class="header__top-baner">
-            <div class="header__icons">
-                <a href="#" class="icon-linkedin"></a>
-                <a href="#" class="icon-twitter"></a>
-                <a href="#" class="icon-pinterest-1"></a>
-                <a href="#" class="icon-gplus"></a>
-                <a href="#" class="icon-rss"></a>
-            </div>
-            <div class="header__login">
-                <ul class="header__login--list">
-                    <li class="header__login--item"><a href="#">Sign up</a></li>
-                    <li class="header__login--item"><a href="#">Login</a></li>
-                    <li class="header__login--item"><a href="#">RSS Feeds</a></li>
-                    <li class="header__login--item"><a href="#">Archived News</a></li>
-                </ul>
+            <div class="header__top-baner--container">
+                <div class="header__icons">
+                    <a href="#" class="icon-linkedin"></a>
+                    <a href="#" class="icon-twitter"></a>
+                    <a href="#" class="icon-pinterest-1"></a>
+                    <a href="#" class="icon-gplus"></a>
+                    <a href="#" class="icon-rss"></a>
+                </div>
+                <div class="header__login">
+                    <ul class="header__login--list">
+                        <li class="header__login--item"><a href="#">Sign up</a></li>
+                        <li class="header__login--item"><a href="#">Login</a></li>
+                        <li class="header__login--item"><a href="#">RSS Feeds</a></li>
+                        <li class="header__login--item"><a href="#">Archived News</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="header__search">
-            <div>
-                <h1><span>E</span>uonymus</h1>
-                <p>Free PSD</p>
-                <p>Website Template</p>
-            </div>
-            <div>
-                <form>
-                    <label for="serchText"></label>
-                    <input type="text" id="searchText" placeholder="Search Our Website...">
-                    <button type="submit">Submit</button>
-                </form>
+            <div class="header__search--container">
+                <div class="header__search--text">
+                    <h1><span>E</span>uonymus</h1>
+                    <p>Free PSD<br>Website Template</p>
+                </div>
+                <div class="header__search--form">
+                    <form>
+                        <!-- <label class="header__search--label" for="serchText"></label> -->
+                        <input class="header__search--input" type="text" id="searchText"
+                            placeholder="Search Our Website...">
+                        <button class="header__search--button" type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="header__menu">
@@ -60,6 +64,12 @@
             </ul>
         </div>
     </header>
+
+    <section class="slider">
+        <div class="slider__container">
+            <img class="slider__container--image" src="images/slider_image.png" alt="slider">
+        </div>
+    </section>
 
 </body>
 
